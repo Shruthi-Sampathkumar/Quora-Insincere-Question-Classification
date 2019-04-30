@@ -13,4 +13,5 @@ Note: this drive link is only accessible to TAMU ids.
 Step 5: Place the 2 extracted .mat files into the data folder.
 
 Step 6: Pick up any of the models notebook/python file to train and evaluate on this data.
-        To run any model, execute: "python isr_idf_no_cnn_no_attn_mat.py"
+        
+        To run any model, execute: "python <model_name>.py" for example "python isr_idf_no_cnn_no_attn_mat.py"
