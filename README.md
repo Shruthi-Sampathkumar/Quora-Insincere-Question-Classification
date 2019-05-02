@@ -52,3 +52,23 @@ Step 6: Pick up any of the models notebook/python file to train and evaluate on 
         To run any model, execute: "python <model_name>.py" for example "python isr_idf_no_cnn_no_attn_mat.py"
 ----------------------------------------------------------------------------------------------------------------------------------------
 # How to run unbiased embeddings generator?
+
+How to run unbiased embeddings generator?
+
+Here we are trying to remove the bias from the Google News embeddings
+
+The following are the scripts being used:
+learn_gender_specific.py: It has a list of gender-specific words
+debias.py: We give the biased embedding, gender-pairs, gender-specific words, and pairs to equalize and we get an unbiased version of the embedding
+
+The words:
+gender_specific_seed.json: gender-specific words list
+gender_specific_full.json: gender-specific words list
+definitional_pairs.json: The word pairs used for computing the gender direction
+equalize_pairs.json: The word pairs that represent gender direction
+
+The following are the steps:
+Step1: Download the folder 'Dbias_embeddings'
+Step2: Go into dbiaswe folder in the Dbias_embeddings folder
+Step3: Download the google embeddings 
+Step4: Run the command --> python debias.py ../embeddings/GoogleNews-vectors-negative300.bin ../data/definitional_pairs.json ../data/gender_specific_full.json ../data/equalize_pairs.json ../embeddings/GoogleNews-vectors-negative300-hard-debiased.bin
