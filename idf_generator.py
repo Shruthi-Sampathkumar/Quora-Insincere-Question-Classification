@@ -121,8 +121,8 @@ def build_model(config, embedding_matrix, n_sentence_extra_features):
     )
 
 def load_qiqc(n_rows=None):
-    #train_df = pd.read_csv(f'{os.environ["DATADIR"]}/train.csv', nrows=n_rows)
-    #submit_df = pd.read_csv(f'{os.environ["DATADIR"]}/test.csv', nrows=n_rows)
+    #train_df = pd.read_csv(f'./data/train.csv', nrows=n_rows)
+    #submit_df = pd.read_csv(f'./data/test.csv', nrows=n_rows)
     train_df=pd.read_csv("train.csv", nrows=n_rows)
     submit_df = pd.read_csv("test.csv",nrows=n_rows)
     n_labels = {
@@ -575,7 +575,7 @@ class GNewsPretrainedVector(object):
     @classmethod
     def load(cls, tokens, limit=None):
         raise NotImplementedError
-        path = f'{os.environ["DATADIR"]}/{cls.path}'
+        path = f'./data/{cls.path}'
         return KeyedVectors.load_word2vec_format(
             path, binary=True, limit=limit)
 
@@ -1711,4 +1711,3 @@ print(word_extra_features.shape)
 
 word_dic = {'word_extra_features':word_extra_features, 'vocab': vocab.word_freq}
 savemat('./IDF.mat', word_dic)
-
