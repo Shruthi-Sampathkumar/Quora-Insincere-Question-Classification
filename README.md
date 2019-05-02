@@ -29,6 +29,7 @@ How to run idf generator?
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+#How to run different models?
 
 
 Step 1: Download data from https://www.kaggle.com/c/quora-insincere-questions-classification/data
