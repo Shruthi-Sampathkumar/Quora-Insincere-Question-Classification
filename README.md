@@ -21,9 +21,12 @@ Step 6: Run all
 Step 7: F-1 score is printed in the end.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-How to run idf generator?
+# How to run idf generator?
 
-
+Step 1: Upload the idf_generator.py into a Kaggle kernel.
+Step 2: Upload Quora-Insincere-Question-Classification dataset to your kernel
+Step 3: Execute code
+Step 4: Extract IDF.mat from output folder of your kernel.
 
 
 
@@ -48,18 +51,4 @@ Step 6: Pick up any of the models notebook/python file to train and evaluate on 
         
         To run any model, execute: "python <model_name>.py" for example "python isr_idf_no_cnn_no_attn_mat.py"
 ----------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-How to run unbiased embeddings generator?
+# How to run unbiased embeddings generator?
