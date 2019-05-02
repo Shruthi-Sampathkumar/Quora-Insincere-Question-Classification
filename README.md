@@ -16,5 +16,17 @@ Step 5: Place the 2 extracted .mat files into the data folder.
 Step 6: Pick up any of the models notebook/python file to train and evaluate on this data.
         
         To run any model, execute: "python <model_name>.py" for example "python isr_idf_no_cnn_no_attn_mat.py"
+-----------------------------------------------------------------------------------------------------------------------------------------
 
-Step 7: To check the best model, we have provided the kaggle kernel. Upload its ipynb file , add Quora-Insincere-Question-Classification dataset to your kernel and run your kernel
+How to run the best model?
+
+Step 1: Open a Kaggle Kernel
+Step 2: Upload Quora-Insincere-Question-Classification dataset to your kernel
+Step 3: Upload final_model_kernel.ipynb
+Step 4: Turn GPU, Internet on for that kernel
+Step 5: Run all!
+Step 6: F-1 score is printed in the end.
+------------------------------------------------------------------------------------------------------------------------------------------
+How to run idf generator?
+------------------------------------------------------------------------------------------------------------------------------------------
+How to run unbiased embeddings generator?
