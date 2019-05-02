@@ -68,7 +68,11 @@ definitional_pairs.json: The word pairs used for computing the gender direction
 equalize_pairs.json: The word pairs that represent gender direction
 
 The following are the steps:
+
 Step1: Download the folder 'Dbias_embeddings'
+
 Step2: Go into dbiaswe folder in the Dbias_embeddings folder
+
 Step3: Download the google embeddings 
+
 Step4: Run the command --> python debias.py ../embeddings/GoogleNews-vectors-negative300.bin ../data/definitional_pairs.json ../data/gender_specific_full.json ../data/equalize_pairs.json ../embeddings/GoogleNews-vectors-negative300-hard-debiased.bin
